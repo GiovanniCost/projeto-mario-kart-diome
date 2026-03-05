@@ -45,6 +45,20 @@ const player6 = {
     points : 0
 };
 
+const players = [player1, player2, player3, player4, player5, player6];
+
+
+function drawPlayers(list) {
+    return list
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 2);
+}
+
+
+const selected = drawPlayers(players);
+
+
+
 const rollTheDice = async () =>{
    return Math.floor(Math.random() * 6 + 1);
 }
@@ -76,7 +90,7 @@ const logRollResult = async (characterName, block, diceResult,attribute) =>{
     const select = Math.floor(Math.random() * confrontation.length); 
     const confrontationType = confrontation[select]; 
     
-     switch (confrontationType) { // Compara com a string
+     switch (confrontationType) {
         case "bomb" : 
             
             console.log(`O confronto entre os corredores será de BOMBA!!`);
@@ -98,13 +112,13 @@ const logRollResult = async (characterName, block, diceResult,attribute) =>{
              case "shell" : 
             console.log(`O confronto entre os corredores será de CASCO!!`);
             if(powerResult1 > powerResult2) {
-                console.log(`O jogador ${character2.name} perdeu 2 pontos`);
-                character2.points = Math.max(0, character2.points - 2) 
+                console.log(`O jogador ${character2.name} perdeu 1 pontos`);
+                character2.points = Math.max(0, character2.points - 1) 
                 console.log(`O jogador ${character1.name} ganhou 1 ponto`);
                 character1.points ++;
             }else if(powerResult2 > powerResult1) {
-                console.log(`O jogador ${character1.name} perdeu 2 pontos`);
-                character1.points = Math.max(0, character1.points - 2)
+                console.log(`O jogador ${character1.name} perdeu 1 pontos`);
+                character1.points = Math.max(0, character1.points - 1)
                 console.log(`O jogador ${character2.name} ganhou 1 ponto`);
                 character2.points ++;
             }else if (powerResult1 === powerResult2) { 
@@ -197,10 +211,10 @@ const raceEngine = async (character1, character2) => {
 }
 
 ( main = async() =>{
-    console.log(`🚥🏁 Corrida entre ${player1.name} e ${player2.name} começado!!!...\n`)
-await raceEngine(player1,player2)
+    console.log(`🚥🏁 Corrida entre : ${selected[0].name} vs ${selected[1].name} começando!!!...\n`);
+await raceEngine(selected[0],selected[1])
 
-await revealsTheWinner(player1,player2)
+await revealsTheWinner(selected[0],selected[1])
 })();
 
 
