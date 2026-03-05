@@ -1,7 +1,7 @@
 # projeto-mario-kart-diome
 Simulador de corridas do Game Mario Kart
 
-<p>Desenvolvido como parte do desafio da <a href="https://web.dio.me/"><span>DIO.me</span>span></a>, o simulador Mario Kart!' é um projeto que mergulha na criação de um divertido jogo de corrida baseado em atributos e sorte. Aqui, dois personagens se enfrentam em uma pista de 5 rodadas cheia de surpresas, onde cada bloco pode ser uma reta, curva ou confronto, exigindo velocidade, manobrabilidade ou poder. O objetivo é simples: acumular mais pontos e consagrar-se campeão! Uma excelente oportunidade para aplicar lógica de programação em um cenário interativo e envolvente."</p>
+<p>Desenvolvido como parte do desafio da <a href="https://web.dio.me/"><span>DIO.me</span></a>, o simulador Mario Kart!' é um projeto que mergulha na criação de um divertido jogo de corrida baseado em atributos e sorte. Aqui, dois personagens se enfrentam em uma pista de 5 rodadas cheia de surpresas, onde cada bloco pode ser uma reta, curva ou confronto, exigindo velocidade, manobrabilidade ou poder. O objetivo é simples: acumular mais pontos e consagrar-se campeão! Uma excelente oportunidade para aplicar lógica de programação em um cenário interativo e envolvente."</p>
 <img href="<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/d30603e9-cb41-4150-8c16-170e307ca288"/>
 
 
