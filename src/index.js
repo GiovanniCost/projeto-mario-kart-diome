@@ -73,7 +73,7 @@ const logRollResult = async (characterName, block, diceResult,attribute) =>{
 
    const typesOfConfrontation = async (character1, character2, powerResult1, powerResult2) =>{
     const confrontation = ["bomb", "shell"]
-    const select = Math.floor(Math.random() * confrontation.length); // Removi o parâmetro `select`
+    const select = Math.floor(Math.random() * confrontation.length); 
     const confrontationType = confrontation[select]; 
     
      switch (confrontationType) { // Compara com a string
